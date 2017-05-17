@@ -1,0 +1,143 @@
+downlload libsvm
+open make.m (matlab)
+run>mex - setup
+select c++ compiler
+run> make
+
+copy the induvidual code files to to ..\libsvm-3.21\libsvm-3.21\matlab (custcentroid.m, custknn.m, customkfold.m, custsvm.m, linearreg.m)
+copy the test files to ..\libsvm-3.21\libsvm-3.21\matlab\files
+run> custkfold
+in cmd prompt run the following 
+
+new customkfold ()
+
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','LR')
+
+channge for all the following
+file: HandWritten.txt:
+
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','LR')       //Total Accuracy=42.4376%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','KNN',1)    //Total Accuracy=75.1049%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','KNN',3)    //Total Accuracy=73.3966%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','KNN',5)    //Total Accuracy=73.6863%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','CENTROID') //Total Accuracy=71.0889%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','SVM',0,1)  //Total Accuracy=79.0909% here 1-> Linear regression
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt','SVM',0,2)  //Total Accuracy=76.1638% here 2-> Guassian kernels
+
+file: ATNTFaceImages400.txt
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','LR')        //Total Accuracy=91.25%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','KNN',1)     //Total Accuracy=97.75%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','KNN',3)     //Total Accuracy=94.5%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','KNN',5)     //Total Accuracy=90.25%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','CENTROID')  //Total Accuracy=93.75%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','SVM',0,1)   //Total Accuracy=98.25% here 1-> Linear regression
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','SVM',0,2)   //Total Accuracy=69.75% here 2-> Guassian kernels
+
+
+file: images50
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','LR')                     //Total Accuracy=100%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','KNN',1)                  //Total Accuracy=100%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','KNN',3)                  //Total Accuracy=100%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','KNN',5)                  //Total Accuracy=94%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','CENTROID')               //Total Accuracy=100%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','SVM',0,1)                //Total Accuracy=100% here 1-> Linear regression
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images50','SVM',0,2)                //Total Accuracy=56%  here 2-> Guassian kernels
+
+
+file: images200
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','LR')                    //Total Accuracy=96%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','KNN',1)                 //Total Accuracy=96%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','KNN',3)                 //Total Accuracy=93.5%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','KNN',5)                 //Total Accuracy=95%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','CENTROID')              //Total Accuracy=96%
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','SVM',0,1)               //Total Accuracy=97%   here 1-> Linear regression
+customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\images200','SVM',0,2)               //Total Accuracy=63.5% here 2->Guassian kernels
+note down the accuracy for each!
+
+Project 3
+run munkers.m (file ending with [rIdx,cIdx]=find(M==minval);)
+[ConfusionMat,MunkresOutoput,rearrangedMat,Accuracy]=custkmeancluster('D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\HandWrittenLetters.txt',26)       //23.17%
+[ConfusionMat,MunkresOutoput,rearrangedMat,Accuracy]=custkmeancluster('D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt',40)
+[ConfusionMat,MunkresOutoput,rearrangedMat,Accuracy]=custkmeancluster('D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt',40)        //63%
+custkmeancluster('D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\project_3\files\images200',20)                    //68%
+custkmeancluster('D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\project_3\files\images50',5)                      //60-96%
+ 
+
+
+update 2
+new customkfolds ()
+
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfold(5,'D:\projects\spring st se2 mining 2016\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\Project23\files\ATNTFaceImages400.txt','LR')
+
+
+
+
+
+update 3
+latest
+
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','LR')       91.25%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','KNN',1)    97.75%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','KNN',3)    94.5%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','KNN',5)    90.25%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','CENTROID') 93.75%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','SVM',0,1)  98.25%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt','SVM',0,2)  85.25%
+
+
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','LR')     41.6174% 
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','KNN',1)  74.4576%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','KNN',3)  73.6686%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','KNN',5)  74.1617%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','CENTROID')  70.9073%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','SVM',0,1) 78.6982%
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt','SVM',0,2) 78.2051%
+
+
+[itteration,resultlabel,difflable,itraccuracy, totalaccuracy]=customkfolds(5,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\images50','LR')    100%
+
+// vX-> non txt extension for the files -> images50   , images200  
+// do the same for 2,3,5,10 instead of customkfolds(5,.....) 
+
+project 3  kmeans k means
+
+[ConfusionMat,MunkresOutoput,rearrangedMat,Accuracy]=custkmeancluster('D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',26) 44.7732%
+[ConfusionMat,MunkresOutoput,rearrangedMat,Accuracy]=custkmeancluster('D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project2&3\Project23_final\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',40)  61.5%
+
+
+//vx ask how to run other files
+
+Project 4a
+               k=10, samplesize=10 or 39 classsize= 40 or 26, infile, kvalue, 'Method', 0,0
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'LR',0,0)        19.75%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',1,0)       70.75%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',3,0)       65%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',5,0)       59.5%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'CENTROID',0,0)  47.5
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,1)       66.5%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,2)       53.75%
+
+
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'LR',0,0)       12.3274%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',1,0)       9.073%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',3,0)       9.6647%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',5,0)      10.94% 
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'CENTROID',0,0) 15.0888%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,1)      17.8501%  here 1-> Linear regression
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,2)      16.1736%  here 2-> Guassian kernels
+
+
+lda call first then split - 100% LDA call - new 4a riju (ldacall.m)
+
+first split then call lda - 50% (ldacall.m) presentation
+
+
+y - custKmean
+
+
+
+
+
+ 12 fig
+name id

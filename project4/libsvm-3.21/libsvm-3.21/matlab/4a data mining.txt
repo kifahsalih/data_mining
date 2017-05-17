@@ -1,0 +1,79 @@
+k=10, samplesize=10 or 39 classsize= 40 or 26, infile, kvalue, 'Method', 0,0
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'LR',0,0)        19.75%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',1,0)       70.75%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',3,0)       65%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',5,0)       59.5%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'CENTROID',0,0)  47.5
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,1)       66.5%
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,2)       53.75%
+
+
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'LR',0,0)       12.3274%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',1,0)       9.073%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',3,0)       9.6647%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',5,0)      10.94% 
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'CENTROID',0,0) 15.0888%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,1)      17.8501%
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,2)      16.1736%
+
+
+
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'LR',0,0)
+fstastics_hand(20,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'LR',0,0)
+fstastics_hand(30,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'LR',0,0)
+fstastics_hand(50,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'LR',0,0)
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',3,0)
+fstastics_hand(20,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',3,0)
+fstastics_hand(30,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',3,0)
+fstastics_hand(50,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'KNN',3,0)
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'CENTROID',0,0)
+fstastics_hand(20,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'CENTROID',0,0)
+fstastics_hand(30,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'CENTROID',0,0)
+fstastics_hand(50,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'CENTROID',0,0)
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,1)
+fstastics_hand(20,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,1)
+fstastics_hand(30,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,1)
+fstastics_hand(50,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,1)
+
+fstastics_hand(10,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,2)
+fstastics_hand(20,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,2)
+fstastics_hand(30,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,2)
+fstastics_hand(50,10,40,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\ATNTFaceImages400.txt',5,'SVM',0,2)
+%Hand written
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'LR',0,0)
+fstastics_hand(20,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'LR',0,0)
+fstastics_hand(30,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'LR',0,0)
+fstastics_hand(50,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'LR',0,0)
+
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',3,0)
+fstastics_hand(20,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',3,0)
+fstastics_hand(30,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',3,0)
+fstastics_hand(50,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'KNN',3,0)
+
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'CENTROID',0,0)
+fstastics_hand(20,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'CENTROID',0,0)
+fstastics_hand(30,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'CENTROID',0,0)
+fstastics_hand(50,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'CENTROID',0,0)
+
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,1)
+fstastics_hand(20,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,1)
+fstastics_hand(30,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,1)
+fstastics_hand(50,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,1)
+
+fstastics_hand(10,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,2)
+fstastics_hand(20,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,2)
+fstastics_hand(30,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,2)
+fstastics_hand(50,39,26,'D:\projects\spring st se2 mining 2016 Jan-May 16\datamining 2162-CSE-5334-001-DATA-MINING--2016-Spring\project4\libsvm-3.21\libsvm-3.21\matlab\files\HandWrittenLetters.txt',5,'SVM',0,2)
+
+
+
+
+
+
+ 
+
